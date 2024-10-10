@@ -1,6 +1,6 @@
 # tradesol.io
 
-![alt solana](https://avatars.githubusercontent.com/u/184553178)
+![alt solana](https://avatars.githubusercontent.com/u/184553178?s=128&v=4)
 
 *Trade SOL to Any Token with a Single API Request*
 
