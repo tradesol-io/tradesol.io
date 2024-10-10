@@ -1,46 +1,48 @@
-[size=24][b]tradesol.io[/b][/size]
-[i]Trade SOL to Any Token with a Single API Request[/i]
+&amp;#96;&amp;#96;&amp;#96;markdown
+# tradesol.io
+*Trade SOL to Any Token with a Single API Request*
 
-[hr]
+---
 
-[b]No API keys. No logs. No limits.[/b]
+**No API keys. No logs. No limits.**
 
-[hr]
+---
 
-[size=18][b]Features[/b][/size]
+## Features
 
-[list]
-[*][b]Simple Integration[/b]: No need for additional libraries. Start trading immediately with a single API call.
-[*][b]Privacy Focused[/b]: We keep no logs of your requests. Your transactions remain private and secure.
-[*][b]Unlimited Access[/b]: No usage limits or restrictions. Trade as much as you need.
-[*][b]Lightweight[/b]: Minimal overhead and super fast. Enhance your projects without the bloat.
-[/list]
+- **Simple Integration**: No need for additional libraries. Start trading immediately with a single API call.
+- **Privacy Focused**: We keep no logs of your requests. Your transactions remain private and secure.
+- **Unlimited Access**: No usage limits or restrictions. Trade as much as you need.
+- **Lightweight**: Minimal overhead and super fast. Enhance your projects without the bloat.
 
-[size=18][b]Get Started[/b][/size]
+## Get Started
 
-Make a single POST request to [code]https://api.tradesol.io/[/code] with the following JSON payload:
+Make a single POST request to &amp;#96;https://api.tradesol.io/&amp;#96; with the following JSON payload:
 
-[code=javascript]
+&amp;#96;&amp;#96;&amp;#96;json
 {
   "private_key": "your_private_key",
   "token_mint": "token_address",
   "gas_fee": 0.000001,
   "amount_sol": 0.1
 }
-[/code]
+&amp;#96;&amp;#96;&amp;#96;
 
 Replace the parameters with your own values:
 
-- [b]private_key[/b]: Your Solana wallet private key in base58 format.
-- [b]token_mint[/b]: The mint address of the token you want to receive.
-- [b]gas_fee[/b]: Optional; defaults to 0.000001 if not provided.
-- [b]amount_sol[/b]: The amount of SOL you want to swap.
+- **private_key**: Your Solana wallet private key in base58 format.
+- **token_mint**: The mint address of the token you want to receive.
+- **gas_fee**: Optional; defaults to 0.000001 if not provided.
+- **amount_sol**: The amount of SOL you want to swap.
 
-[size=18][b]Code Examples[/b][/size]
+## Code Examples
 
 Switch between languages to see how to integrate:
 
-[spoiler=JavaScript][code=javascript]
+&amp;lt;details&amp;gt;
+&amp;lt;summary&amp;gt;JavaScript&amp;lt;/summary&amp;gt;
+
+&amp;#96;&amp;#96;&amp;#96;javascript
 const fetch = require('node-fetch');
 
 const payload = {
@@ -58,9 +60,14 @@ fetch('https://api.tradesol.io/', {
   .then((res) => res.json())
   .then((data) => console.log(data))
   .catch((err) => console.error(err));
-[/code][/spoiler]
+&amp;#96;&amp;#96;&amp;#96;
 
-[spoiler=Python][code=python]
+&amp;lt;/details&amp;gt;
+
+&amp;lt;details&amp;gt;
+&amp;lt;summary&amp;gt;Python&amp;lt;/summary&amp;gt;
+
+&amp;#96;&amp;#96;&amp;#96;python
 import requests
 
 payload = {
@@ -72,9 +79,14 @@ payload = {
 
 response = requests.post('https://api.tradesol.io/', json=payload)
 print(response.json())
-[/code][/spoiler]
+&amp;#96;&amp;#96;&amp;#96;
 
-[spoiler=Go][code=go]
+&amp;lt;/details&amp;gt;
+
+&amp;lt;details&amp;gt;
+&amp;lt;summary&amp;gt;Go&amp;lt;/summary&amp;gt;
+
+&amp;#96;&amp;#96;&amp;#96;go
 package main
 
 import (
@@ -104,15 +116,20 @@ func main() {
   json.NewDecoder(resp.Body).Decode(&result)
   fmt.Println(result)
 }
-[/code][/spoiler]
+&amp;#96;&amp;#96;&amp;#96;
 
-[spoiler=PHP][code=php]
-<?php
+&amp;lt;/details&amp;gt;
+
+&amp;lt;details&amp;gt;
+&amp;lt;summary&amp;gt;PHP&amp;lt;/summary&amp;gt;
+
+&amp;#96;&amp;#96;&amp;#96;php
+&lt;?php
 $payload = [
-    'private_key' => 'your_private_key',
-    'token_mint' => 'token_address',
-    'gas_fee' => 0.000001,
-    'amount_sol' => 0.1,
+    'private_key' =&amp;gt; 'your_private_key',
+    'token_mint' =&amp;gt; 'token_address',
+    'gas_fee' =&amp;gt; 0.000001,
+    'amount_sol' =&amp;gt; 0.1,
 ];
 
 $ch = curl_init('https://api.tradesol.io/');
@@ -125,10 +142,15 @@ $response = curl_exec($ch);
 curl_close($ch);
 
 echo $response;
-?>
-[/code][/spoiler]
+?&amp;gt;
+&amp;#96;&amp;#96;&amp;#96;
 
-[spoiler=Shell][code]
+&amp;lt;/details&amp;gt;
+
+&amp;lt;details&amp;gt;
+&amp;lt;summary&amp;gt;Shell&amp;lt;/summary&amp;gt;
+
+&amp;#96;&amp;#96;&amp;#96;shell
 curl -X POST https://api.tradesol.io/ \
 -H 'Content-Type: application/json' \
 -d '{
@@ -137,9 +159,14 @@ curl -X POST https://api.tradesol.io/ \
   "gas_fee": 0.000001,
   "amount_sol": 0.1
 }'
-[/code][/spoiler]
+&amp;#96;&amp;#96;&amp;#96;
 
-[spoiler=Ruby][code=ruby]
+&amp;lt;/details&amp;gt;
+
+&amp;lt;details&amp;gt;
+&amp;lt;summary&amp;gt;Ruby&amp;lt;/summary&amp;gt;
+
+&amp;#96;&amp;#96;&amp;#96;ruby
 require 'net/http'
 require 'json'
 
@@ -153,41 +180,52 @@ payload = {
 
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true
-request = Net::HTTP::Post.new(uri.path, {'Content-Type' => 'application/json'})
+request = Net::HTTP::Post.new(uri.path, {'Content-Type' =&amp;gt; 'application/json'})
 request.body = payload.to_json
 
 response = http.request(request)
 puts response.body
-[/code][/spoiler]
+&amp;#96;&amp;#96;&amp;#96;
 
-[size=18][b]Frequently Asked Questions[/b][/size]
+&amp;lt;/details&amp;gt;
 
-[b]Do I need an API key?[/b]
+## Frequently Asked Questions
+
+**Do I need an API key?**
+
 No, you can start using the API immediately without any API keys.
 
-[b]Are there any usage limits?[/b]
+**Are there any usage limits?**
+
 There are no usage limits. You can make as many requests as you need.
 
-[b]Do you keep logs of my requests?[/b]
+**Do you keep logs of my requests?**
+
 We respect your privacy and do not keep any logs.
 
-[b]How do I get started?[/b]
+**How do I get started?**
+
 Simply make a POST request to our endpoint with the required parameters.
 
-[b]Are there any fees?[/b]
+**Are there any fees?**
+
 Yes, there are fees, but they are less than one percent per transaction.
 
-[b]Which DEXs is it compatible with?[/b]
+**Which DEXs is it compatible with?**
+
 It is compatible with Raydium and Pumpfun.
 
-[b]Is there any support available?[/b]
-Yes, you can contact us at [email]contact@tradesol.io[/email] for any inquiries.
+**Is there any support available?**
 
-[hr]
+Yes, you can contact us at [contact@tradesol.io](mailto:contact@tradesol.io) for any inquiries.
 
-[size=18][b]Contact Us[/b][/size]
+---
+
+## Contact Us
 
 For support or inquiries, please reach out to us:
 
-- [email]contact@tradesol.io[/email]
-- [url=https://github.com/tradesol-io/tradesol.io]GitHub Repository[/url]
+- [contact@tradesol.io](mailto:contact@tradesol.io)
+- [GitHub Repository](https://github.com/tradesol-io/tradesol.io)
+
+&amp;#96;&amp;#96;&amp;#96;
