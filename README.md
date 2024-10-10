@@ -16,6 +16,8 @@
 
 ## Get Started
 
+### You can host your own server with source code or use https://api.tradesol.io now!
+
 Make a single POST request to `https://api.tradesol.io/` with the following JSON payload:
 
 ```json
