@@ -1,4 +1,4 @@
-&amp;#96;&amp;#96;&amp;#96;markdown
+```markdown
 # tradesol.io
 *Trade SOL to Any Token with a Single API Request*
 
@@ -17,16 +17,16 @@
 
 ## Get Started
 
-Make a single POST request to &amp;#96;https://api.tradesol.io/&amp;#96; with the following JSON payload:
+Make a single POST request to `https://api.tradesol.io/` with the following JSON payload:
 
-&amp;#96;&amp;#96;&amp;#96;json
+```json
 {
   "private_key": "your_private_key",
   "token_mint": "token_address",
   "gas_fee": 0.000001,
   "amount_sol": 0.1
 }
-&amp;#96;&amp;#96;&amp;#96;
+```
 
 Replace the parameters with your own values:
 
@@ -39,10 +39,10 @@ Replace the parameters with your own values:
 
 Switch between languages to see how to integrate:
 
-&amp;lt;details&amp;gt;
-&amp;lt;summary&amp;gt;JavaScript&amp;lt;/summary&amp;gt;
+<details>
+<summary>JavaScript</summary>
 
-&amp;#96;&amp;#96;&amp;#96;javascript
+```javascript
 const fetch = require('node-fetch');
 
 const payload = {
@@ -60,14 +60,14 @@ fetch('https://api.tradesol.io/', {
   .then((res) => res.json())
   .then((data) => console.log(data))
   .catch((err) => console.error(err));
-&amp;#96;&amp;#96;&amp;#96;
+```
 
-&amp;lt;/details&amp;gt;
+</details>
 
-&amp;lt;details&amp;gt;
-&amp;lt;summary&amp;gt;Python&amp;lt;/summary&amp;gt;
+<details>
+<summary>Python</summary>
 
-&amp;#96;&amp;#96;&amp;#96;python
+```python
 import requests
 
 payload = {
@@ -79,14 +79,14 @@ payload = {
 
 response = requests.post('https://api.tradesol.io/', json=payload)
 print(response.json())
-&amp;#96;&amp;#96;&amp;#96;
+```
 
-&amp;lt;/details&amp;gt;
+</details>
 
-&amp;lt;details&amp;gt;
-&amp;lt;summary&amp;gt;Go&amp;lt;/summary&amp;gt;
+<details>
+<summary>Go</summary>
 
-&amp;#96;&amp;#96;&amp;#96;go
+```go
 package main
 
 import (
@@ -116,20 +116,20 @@ func main() {
   json.NewDecoder(resp.Body).Decode(&result)
   fmt.Println(result)
 }
-&amp;#96;&amp;#96;&amp;#96;
+```
 
-&amp;lt;/details&amp;gt;
+</details>
 
-&amp;lt;details&amp;gt;
-&amp;lt;summary&amp;gt;PHP&amp;lt;/summary&amp;gt;
+<details>
+<summary>PHP</summary>
 
-&amp;#96;&amp;#96;&amp;#96;php
+```php
 &lt;?php
 $payload = [
-    'private_key' =&amp;gt; 'your_private_key',
-    'token_mint' =&amp;gt; 'token_address',
-    'gas_fee' =&amp;gt; 0.000001,
-    'amount_sol' =&amp;gt; 0.1,
+    'private_key' => 'your_private_key',
+    'token_mint' => 'token_address',
+    'gas_fee' => 0.000001,
+    'amount_sol' => 0.1,
 ];
 
 $ch = curl_init('https://api.tradesol.io/');
@@ -142,15 +142,15 @@ $response = curl_exec($ch);
 curl_close($ch);
 
 echo $response;
-?&amp;gt;
-&amp;#96;&amp;#96;&amp;#96;
+?>
+```
 
-&amp;lt;/details&amp;gt;
+</details>
 
-&amp;lt;details&amp;gt;
-&amp;lt;summary&amp;gt;Shell&amp;lt;/summary&amp;gt;
+<details>
+<summary>Shell</summary>
 
-&amp;#96;&amp;#96;&amp;#96;shell
+```shell
 curl -X POST https://api.tradesol.io/ \
 -H 'Content-Type: application/json' \
 -d '{
@@ -159,14 +159,14 @@ curl -X POST https://api.tradesol.io/ \
   "gas_fee": 0.000001,
   "amount_sol": 0.1
 }'
-&amp;#96;&amp;#96;&amp;#96;
+```
 
-&amp;lt;/details&amp;gt;
+</details>
 
-&amp;lt;details&amp;gt;
-&amp;lt;summary&amp;gt;Ruby&amp;lt;/summary&amp;gt;
+<details>
+<summary>Ruby</summary>
 
-&amp;#96;&amp;#96;&amp;#96;ruby
+```ruby
 require 'net/http'
 require 'json'
 
@@ -180,14 +180,14 @@ payload = {
 
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true
-request = Net::HTTP::Post.new(uri.path, {'Content-Type' =&amp;gt; 'application/json'})
+request = Net::HTTP::Post.new(uri.path, {'Content-Type' => 'application/json'})
 request.body = payload.to_json
 
 response = http.request(request)
 puts response.body
-&amp;#96;&amp;#96;&amp;#96;
+```
 
-&amp;lt;/details&amp;gt;
+</details>
 
 ## Frequently Asked Questions
 
@@ -228,4 +228,4 @@ For support or inquiries, please reach out to us:
 - [contact@tradesol.io](mailto:contact@tradesol.io)
 - [GitHub Repository](https://github.com/tradesol-io/tradesol.io)
 
-&amp;#96;&amp;#96;&amp;#96;
+```
