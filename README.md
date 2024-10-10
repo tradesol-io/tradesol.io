@@ -1,4 +1,3 @@
-```markdown
 # tradesol.io
 *Trade SOL to Any Token with a Single API Request*
 
@@ -227,5 +226,3 @@ For support or inquiries, please reach out to us:
 
 - [contact@tradesol.io](mailto:contact@tradesol.io)
 - [GitHub Repository](https://github.com/tradesol-io/tradesol.io)
-
-```
